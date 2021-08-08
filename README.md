@@ -14,7 +14,12 @@ A simple restful NodeJS CRUD, with expressJS and mongoDB.
 
 |          ROUTE            |       HTTP        |      DESCRIPTION      | 
 | ------------------------- | ----------------- | --------------------- | 
-| /record/                  |       POST        | Get records based on filter | 
+| /record                   |       POST        | Get records based on filter body params {
+	"startDate": "2017-01-26",
+	"endDate": "2017-02-02",
+	"minCount": 10,
+	"maxCount": 3000.98
+}| 
 
 ## Running
 
