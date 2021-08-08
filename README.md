@@ -22,18 +22,19 @@ The request payload will include a JSON with 4 fields.
 “minCount” and “maxCount” are for filtering the data. Sum of the “count” array in the documents should be between “minCount” and “maxCount”.
 
 Sample:
-
+```json
 {
 	"startDate": "2017-01-26",
 	"endDate": "2017-02-02",
 	"minCount": 10,
 	"maxCount": 3000.98
 }
+```
 
 ## Response Payload
 
 Sample:
-
+```json
 {
     "code": 0,
     "msg": "Success",
@@ -55,6 +56,7 @@ Sample:
         }
     ]
 }
+```
 
 ## Running
 
