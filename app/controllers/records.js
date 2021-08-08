@@ -29,9 +29,9 @@ let getRecords = (req, res) =>{
         return handleError(res, 400)({message: 'Required parameter missing'})
     }
     // checking date is valid format using moment
-    // else if(!moment(startDate, dateFormat, true).isValid() || !moment(endDate, dateFormat, true).isValid()){
-    //     return handleError(res, 400)({message: 'Invalid date format! Please check startDate/endDate, Format should be YYYY-MM-DD'})
-    // }
+    else if(!moment(startDate, dateFormat, true).isValid() || !moment(endDate, dateFormat, true).isValid()){
+        return handleError(res, 400)({message: 'Invalid date format! Please check startDate/endDate, Format should be YYYY-MM-DD'})
+    }
     //validate minCount/maxCount should be number
     else if (typeof(minCount) != 'number' || typeof(maxCount) != 'number'){
         return handleError(res, 400)({message: 'Parameter minCount/maxCount should be number'})
