@@ -9,6 +9,8 @@ router.use(bodyParser.json());
 router.use(function (req, res, next) {
     next();
 });
-
+router.route('/').get((req, res)=>{
+    res.send("Getir assignment running")
+})
 router.route('/record').post(recordsController.getRecords)
 module.exports = router;
