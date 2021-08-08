@@ -8,7 +8,7 @@ const app = express();
 const db = require('./models/db');
 const Router = require('./routes');
 //RUN SERVER ON PORT 3000
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 //setup /api as root route
 app.use('/', Router);
