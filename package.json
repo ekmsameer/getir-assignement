@@ -1,0 +1,37 @@
+{
+  "name": "getir-assignment",
+  "version": "1.0.0",
+  "description": "A simple restful NodeJS, with expressJS and mongoDB",
+  "main": "./app/server.js",
+  "scripts": {
+    "start": "node app/server",
+    "dev": "nodemon",
+    "test": "jest"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "node",
+    "javascript",
+    "crud",
+    "restful",
+    "rest",
+    "api",
+    "mongo",
+    "mongodb"
+  ],
+  "author": "Sameer",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/register": "^7.14.5",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jest": "^27.0.6",
+    "moment": "^2.29.1",
+    "mongoose": "^4.13.5",
+    "nodemon": "^1.12.1",
+    "request": "^2.83.0"
+  }
+}
